@@ -6,6 +6,7 @@ import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
 import NavBar from './HeaderComponent/NavBar';
 import Footer from './FooterComponent/Footer';
+import About from './AboutComponent/About';
 
 class App extends Component {
     render() {
@@ -14,6 +15,7 @@ class App extends Component {
                 <div>
                     <NavBar />  {/* permanently mounted */}
                     <Route name="home" exact path="/" component={HomePage} />
+                    <Route name="about" path="/about" component={About} />
                     <Footer />  {/* permanently mounted */}
                 </div>
             </Router>
