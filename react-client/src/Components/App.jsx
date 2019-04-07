@@ -12,8 +12,9 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <NavBar />
+                    <NavBar />  {/* permanently mounted */}
                     <Route name="home" exact path="/" component={HomePage} />
+                    <Footer />  {/* permanently mounted */}
                 </div>
             </Router>
         )
